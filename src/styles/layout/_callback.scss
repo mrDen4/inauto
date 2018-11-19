@@ -1,0 +1,42 @@
+.callback {
+    .callback__title {
+        text-align: center;
+    }
+
+
+    .callback__form {
+        display: flex;
+        flex-direction: column;
+
+        .form__row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+
+            .input {
+                width: 30%;
+                background: none;
+                border: none;
+                border-bottom: 1px solid $red;
+                padding: 0 0 20px 0;
+                color: #ffffff;
+
+                &--comment {
+                    width: 65%;
+                }
+            }
+
+            .select {
+                width: 30%;
+                background: none;
+                border: none;
+                border-bottom: 1px solid $red;
+                color: #ffffff;
+            }
+
+            .row__btn {
+                width: 30%;
+            }
+        }
+    }
+}

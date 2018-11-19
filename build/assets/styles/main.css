@@ -171,7 +171,8 @@ ul {
     background: url("../images/about-img.png") center center no-repeat;
     background-size: cover; }
   .about .about__content {
-    width: 50%; }
+    width: 50%;
+    padding-bottom: 50px; }
   .about .about__list {
     display: flex;
     flex-wrap: wrap;
@@ -227,3 +228,165 @@ ul {
       transition: .3s; }
       .services .services__list .item__link:hover {
         background: #E02929; }
+
+.portfolio {
+  padding-top: 100px; }
+  .portfolio .portfolio__container {
+    background: #0D0D0D;
+    align-items: center; }
+  .portfolio .portfolio__title {
+    text-align: center; }
+  .portfolio .portfolio__text {
+    text-align: center; }
+  .portfolio .portfolio__imgs {
+    display: flex;
+    margin-top: 50px;
+    height: 400px;
+    width: 100%; }
+    .portfolio .portfolio__imgs img {
+      transition: .3s;
+      width: 100%;
+      cursor: pointer; }
+      .portfolio .portfolio__imgs img:hover {
+        opacity: .6; }
+  .portfolio .portfolio__left {
+    width: 33.3%;
+    overflow: hidden;
+    background: #E02929; }
+    .portfolio .portfolio__left .left__img {
+      width: 100%; }
+  .portfolio .portfolio__center {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #E02929; }
+    .portfolio .portfolio__center .center__top {
+      display: flex;
+      height: 50%; }
+    .portfolio .portfolio__center .center__bottom {
+      height: 50%; }
+  .portfolio .portfolio__right {
+    width: 33.3%;
+    overflow: hidden;
+    background: #E02929; }
+  .portfolio .portfolio__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    width: 210px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+
+.mission {
+  padding-top: 100px; }
+  .mission .mission__container {
+    background: #0D0D0D;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 0; }
+  .mission .mission__content {
+    width: 50%;
+    padding-bottom: 50px; }
+  .mission .mission__img {
+    width: 45%;
+    background: url("../images/mission.png") center center no-repeat; }
+  .mission .content__row {
+    display: flex;
+    justify-content: space-between; }
+    .mission .content__row .row__item {
+      width: 45%;
+      display: flex;
+      flex-direction: column; }
+      .mission .content__row .row__item .item__big {
+        color: #E02929;
+        font-size: 64px;
+        margin: 0; }
+      .mission .content__row .row__item .item__small {
+        margin: 0; }
+
+.license {
+  padding-top: 100px; }
+  .license .license__container {
+    background: #0D0D0D;
+    flex-direction: row; }
+
+.team {
+  padding-top: 100px; }
+  .team .team__container {
+    background: #0D0D0D;
+    text-align: center; }
+  .team .team__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+    .team .team__list .list__item {
+      background: #ffff; }
+    .team .team__list .item__text {
+      color: #000000;
+      margin-bottom: 35px; }
+
+.callback .callback__title {
+  text-align: center; }
+
+.callback .callback__form {
+  display: flex;
+  flex-direction: column; }
+  .callback .callback__form .form__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px; }
+    .callback .callback__form .form__row .input {
+      width: 30%;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #E02929;
+      padding: 0 0 20px 0;
+      color: #ffffff; }
+      .callback .callback__form .form__row .input--comment {
+        width: 65%; }
+    .callback .callback__form .form__row .select {
+      width: 30%;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #E02929;
+      color: #ffffff; }
+    .callback .callback__form .form__row .row__btn {
+      width: 30%; }
+
+.youtube {
+  padding-top: 100px; }
+  .youtube .youtube__container {
+    background: #0D0D0D;
+    align-items: center; }
+  .youtube .youtube__title {
+    text-align: center; }
+  .youtube .youtube__text {
+    text-align: center; }
+  .youtube .youtube__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+    width: 100%; }
+    .youtube .youtube__list .list__item {
+      width: 30%; }
+    .youtube .youtube__list .item__video {
+      height: 220px;
+      background: #514D56; }
+    .youtube .youtube__list .item__title {
+      color: #ffffff; }
+    .youtube .youtube__list .item__text {
+      font-size: 14px; }
+  .youtube .youtube__button {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-bottom: 50px; }

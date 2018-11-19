@@ -1,0 +1,51 @@
+.youtube {
+    padding-top: 100px;
+
+    .youtube__container {
+        background: #0D0D0D;
+        align-items: center;
+    }
+
+    .youtube__title {
+        text-align: center;
+    }
+
+    .youtube__text {
+        text-align: center;
+    }
+
+    .youtube__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 50px 0;
+        width: 100%;
+
+        .list__item {
+            width: 30%;
+        }
+
+        .item__video {
+            height: 220px;
+            background: #514D56;
+        }
+
+        .item__title {
+            color: #ffffff;
+        }
+
+        .item__text {
+            font-size: 14px;
+        }
+    }
+
+    .youtube__button {
+        text-align: center;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,25 @@
+.team {
+    padding-top: 100px;
+
+    .team__container {
+        background: #0D0D0D;
+        text-align: center;
+    }
+
+    .team__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        
+        .list__item {
+            background: #ffff;
+        }
+
+        .item__text {
+            color: #000000;
+            margin-bottom: 35px;
+        }
+    }
+}
