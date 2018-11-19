@@ -390,3 +390,88 @@ ul {
     justify-content: center;
     text-decoration: none;
     margin-bottom: 50px; }
+
+.partners {
+  padding-top: 100px; }
+  .partners .partners__container {
+    background: #0D0D0D;
+    align-items: center; }
+  .partners .partners__title {
+    text-align: center; }
+  .partners .partners__text {
+    text-align: center; }
+  .partners .partners__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 50px; }
+    .partners .partners__list .partners__item {
+      width: 22%;
+      margin-bottom: 30px; }
+      .partners .partners__list .partners__item .item__img {
+        width: 100%; }
+  .partners .partners__btn {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 50px; }
+
+.contacts {
+  padding-top: 100px; }
+  .contacts .contacts__container {
+    background: #0D0D0D;
+    flex-direction: row;
+    justify-content: space-between; }
+  .contacts .contacts__content {
+    width: 35%;
+    padding-bottom: 50px; }
+  .contacts .contacts__map {
+    width: 60%;
+    background: yellow; }
+  .contacts .contacts__list {
+    display: flex;
+    flex-direction: column; }
+  .contacts .list__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; }
+  .contacts .item__img {
+    margin-right: 10px; }
+  .contacts .item__phones {
+    display: flex;
+    flex-direction: column; }
+  .contacts .item__text {
+    margin-right: 10px;
+    text-decoration: none; }
+  .contacts .item__img {
+    width: 20px; }
+
+.footer {
+  background: #000;
+  padding-top: 50px; }
+  .footer .footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer .row__nav {
+    display: flex; }
+    .footer .row__nav .item__link {
+      color: #ffffff;
+      text-decoration: none;
+      margin-right: 20px;
+      transition: .3s; }
+      .footer .row__nav .item__link:hover {
+        color: #E02929; }
+  .footer .row__link {
+    display: flex;
+    text-decoration: none;
+    transition: .3s; }
+    .footer .row__link .link__text {
+      transition: .3s;
+      margin-right: 20px; }
+    .footer .row__link:hover .link__text {
+      color: #E02929; }

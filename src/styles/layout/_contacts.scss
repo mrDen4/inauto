@@ -1,0 +1,48 @@
+.contacts {
+    padding-top: 100px;
+
+    .contacts__container {
+        background: #0D0D0D;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contacts__content {
+        width: 35%;
+        padding-bottom: 50px;
+    }
+
+    .contacts__map {
+        width: 60%;
+        background: yellow;
+    }
+
+    .contacts__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .item__img {
+        margin-right: 10px;
+    }
+
+    .item__phones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item__text {
+        margin-right: 10px;
+        text-decoration: none;
+    }
+
+    .item__img {
+        width: 20px;
+    }
+}
