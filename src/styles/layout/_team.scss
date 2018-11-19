@@ -1,5 +1,9 @@
 .team {
     padding-top: 100px;
+    
+    @include tablets() {
+        padding-top: 0;
+    }
 
     .team__container {
         background: #0D0D0D;
@@ -13,21 +17,21 @@
         margin-top: 50px;
         margin-bottom: 50px;
 
-        @include tablets() {
+        @include horizon() {
             flex-direction: column;
         }
         
         .list__item {
             background: #ffff;
+            width: 23%;
 
-            @include tablets() {
+            @include horizon() {
                 margin-bottom: 30px;
+                width: 100%;
             }
 
             .item__img {
-                @include tablets() {
-                    width: 100%;
-                }
+                width: 100%;
             }
         }
 

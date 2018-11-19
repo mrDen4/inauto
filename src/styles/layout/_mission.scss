@@ -1,6 +1,10 @@
 .mission {
     padding-top: 100px;
 
+    @include tablets() {
+        padding-top: 0;
+    }
+
     .mission__container {
         background: #0D0D0D;
         flex-direction: row;
@@ -10,6 +14,7 @@
         @include tablets() {
             flex-direction: column;
             padding-right: 15px;
+            align-items: center;
         }
     }
 
@@ -30,6 +35,11 @@
         background-size: cover;
 
         @include tablets() {
+            width: 60%;
+            height: 350px;
+        }
+
+        @include horizon() {
             width: 100%;
             height: 350px;
         }
