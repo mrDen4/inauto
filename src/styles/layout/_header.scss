@@ -3,166 +3,92 @@
     position: absolute;
     width: 100%;
     top: 0;
+    z-index: 10;
 
     .header__container {
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
         width: 100%;
         padding-top: 30px;
-
-        @include tablets() {
-            flex-direction: column;
-            justify-content: center;
-        }
     }
 
-    .header__logo {
-        width: 225px;
-        height: 38px;
+    .header__link {
         margin-right: auto;
-
-        @include tablets() {
-            margin-right: 0;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            width: 300px;
-        }
-    }
-    
-    .header__phone {
-        display: flex;
-        align-items: center;
-        margin-right: 30px;
-
-        @include tablets() {
-            margin-right: 0;
-            order: 2;
-            width: 300px;
-        }
-
-        .phone__logo {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 10px;
-        }
-
-        .phone__content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            .content__text {
-                color: #ffffff;
-                text-decoration: none;
-                transition: .3s;
-
-                &:hover {
-                    color: $blue;
-                }
-            }
-
-            .content__btn {
-                background: none;
-                border: none;
-                text-decoration: underline;
-                color: $blue;
-                font-size: 12px;
-                cursor: pointer;
-                transition: .3s;
-
-                &:hover {
-                    color: #ffffff;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-    
-    .header__location {
-        display: flex;
-        align-items: center;
-        background: none;
-        border: none;
-        cursor: pointer;
+        text-decoration: none;
         transition: .3s;
-        margin-right: 30px;
+        
+        &:hover {
 
-        @include tablets() {
-            margin-right: 0;
-            padding: 0;
-            margin-bottom: 20px;
-            width: 300px;
+            .header__logo {
+                color: $red;
+            }
         }
+
+        .header__logo {
+            font-size: 18px;
+            font-style: bold;
+            transition: .3s;
+    
+            .logo__color {
+                color: $red;
+                transition: .3s;
+            }
+        }
+    }
+
+    .header__cont {
+        display: flex;
+        text-decoration: none;
+        color: #ffffff;
+        transition: .3s;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
-            .location__text {
-                color: $blue;
-            }
+            color: $red;
         }
 
-        .location__logo {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .phone__img {
             margin-right: 10px;
         }
+    }
 
-        .location__text {
-            color: #ffffff;
-            transition: .3s;
+    .header__contacts {
+        display: flex;
+    }
+
+    .header__socials {
+        display: flex;
+    }
+
+    .contacts__item {
+        color: #ffffff;
+        margin-right: 30px;
+        
+        .item__img {
+            margin-right: 10px;
         }
     }
 
     .header__menu {
-        border: none;
         background: none;
+        border: none;
         display: flex;
-        align-items: center;
         color: #ffffff;
         cursor: pointer;
         transition: .3s;
-
-        @include tablets() {
-            padding: 0;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-        }
-
+        
         &:hover {
-            color: $blue;
+            color: $red;
+
+            .menu__img {
+                transform: rotate(90deg);
+            }
         }
 
-        .menu__logo {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background: #ffffff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .menu__img {
             margin-left: 10px;
+            transition: .3s;
         }
-    }
-}
-
-.header--dark {
-    background: #333333;
-    padding-bottom: 30px;
-    padding-top: 30px;
-
-    .header__container {
-        padding-top: 0;
     }
 }

@@ -1,13 +1,7 @@
 .hero {
     min-height: 100vh;
     width: 100vw;
-    background: url('../images/hero-bg.png') center center no-repeat;
-    background-size: cover;
-
-    @include tablets() {
-        padding-top: 250px;
-        padding-bottom: 100px;
-    }
+    position: relative;
 
     .hero__container {
         align-items: center;
@@ -15,166 +9,47 @@
         min-height: 100vh;
     }
 
-    .hero__arrow-l {
-        position: absolute;
-        left: 10px;
-        background: url('../images/arrow-l.png') center center no-repeat;
-        width: 45px;
-        height: 45px;
-        cursor: pointer;
-        z-index: 999;
-        display: flex;
-
-        @include tablets() {
-            left: 0;
-        }
-    }
-
-    .hero__arrow-r {
-        position: absolute;
-        right: 10px;
-        background: url('../images/arrow-r.png') center center no-repeat;
-        width: 45px;
-        height: 45px;
-        z-index: 999;
-        cursor: pointer;
-        display: flex;
-
-        @include tablets() {
-            right: 0;
-        }
-    }
-
     .hero__slider {
         width: 100%;
+        height: 60vh;
+    }
 
-        .hero__slide {
-            display: flex;
-            justify-content: space-between;
-            color: #ffffff;
-            min-height: 60vh;
-            padding: 0 50px;
+    .slider__slide {
+        background: url('../images/hero-slide-1.png') center center no-repeat;
+        background-size: cover;
+        height: 60vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-            @include tablets() {
-                flex-direction: column;
-                height: 100%;
-                padding: 0 40px;
-                align-items: center;
-            }
+    .slide__title {
+        text-transform: uppercase;
+        margin: 0;
+    }
 
-            .slide__title {
-                font-size: 72px;
-                margin: 0;
+    .slide__about {
+        max-width: 470px;
+    }
 
-                @include tablets() {
-                    font-size: 48px;
-                    line-height: 55px;
-                }
-            }
+    .hero__link {
+        color: #ffffff;
+        text-decoration: none;
+        display: flex;
+        transition: .3s;
+        position: absolute;
+        bottom: 15px;   
+
+        &:hover {
+            color: $red;
         }
 
-        .slide__left {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
-
-            @include tablets() {
-                width: 100%;
-                align-items: center;
-            }
-        }
-
-        .slide__text--about {
-            max-width: 400px;
-        }
-
-        .slide__btn {
-            background: $blue;
-            color: #ffffff;
-            width: 270px;
-            height: 50px;
-            border: none;
-            cursor: pointer;
-            transition: .3s;
-
-            @include tablets() {
-                width: 270px;
-                margin-bottom: 20px;
-            }
-
-            @include horizon() {
-                width: 100%;
-            }
-
-            &:hover {
-                background: lighten($color: $blue, $amount: 20);
-            }
-        }
-
-        .slide__nav {
-            display: flex;
-            margin-top: 50px;
-
-            .nav__item {
-                margin-right: 10px;
-                cursor: pointer;
-                transition: .3s;
-
-                &:hover {
-                    color: $blue;
-                    text-decoration: underline;
-                }
-
-                &:last-child {
-                    margin-right: 0;
-                }
-                
-                &--active {
-                    color: $blue;
-                    text-decoration: underline;
-                }
-            }
-        }
-
-        .slide__right {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            @include tablets() {
-                width: 100%;
-                align-items: center;
-            }
-
-            .slide__list {
-
-                .list__item {
-                    display: flex;
-
-                    &::before {
-                        content: '';
-                        width: 15px;
-                        height: 15px;
-                        background: url('../images/li.png');
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        margin-right: 15px;
-                    }
-
-                    .item__link {
-                        color: #ffffff;
-                        text-decoration: none;
-                        transition: .3s;
-
-                        &:hover {
-                            color: $blue;
-                            text-decoration: underline;
-                        }
-                    }
-                }
-            }
+        .link__transform {
+            transform: rotate(90deg);
+            margin-left: 10px;
+            font-size: 18px;
+            margin: 0;
         }
     }
 }
