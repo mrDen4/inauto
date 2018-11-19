@@ -20,6 +20,11 @@
         height: 400px;
         width: 100%;
 
+        @include tablets() {
+            flex-direction: column;
+            height: inherit;
+        }
+
         img {
             transition: .3s;
             width: 100%;
@@ -28,6 +33,10 @@
             &:hover {
                 opacity: .6;
             }
+
+            @include tablets() {
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -35,6 +44,12 @@
         width: 33.3%;
         overflow: hidden;
         background: $red;
+
+        @include tablets() {
+            background: none;
+            width: 100%;
+            height: 350px;
+        }
 
         .left__img {
             width: 100%;
@@ -48,13 +63,21 @@
         overflow: hidden;
         background: $red;
 
+        @include tablets() {
+            background: none;
+            width: 100%;
+            height: 1050px;
+        }
+
         .center__top {
             display: flex;
-            height: 50%;
+            flex-direction: column;
+            height: 750px;
         }
 
         .center__bottom {
-            height: 50%;
+            height: 350px;
+            display: flex;
         }
     }
 
@@ -62,6 +85,12 @@
         width: 33.3%;
         overflow: hidden;
         background: $red;
+
+        @include tablets() {
+            background: none;
+            width: 100%;
+            height: 350px;
+        }
     }
 
     .portfolio__btn {

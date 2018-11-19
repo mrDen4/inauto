@@ -25,6 +25,10 @@
             width: 22%;
             margin-bottom: 30px;
 
+            @include tablets() {
+                width: 45%;
+            }
+
             .item__img {
                 width: 100%;
             }
@@ -39,5 +43,9 @@
         text-align: center;
         text-decoration: none;
         margin-bottom: 50px;
+
+        @include tablets() {
+            width: 100%;
+        }
     }
 }

@@ -30,6 +30,10 @@
             justify-content: center;
             height: 160px;
             margin-bottom: 30px;
+
+            @include tablets() {
+                width: 45%;
+            }
         }
 
         .item__text {

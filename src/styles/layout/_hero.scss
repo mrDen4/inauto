@@ -3,6 +3,10 @@
     width: 100vw;
     position: relative;
 
+    @include tablets() {
+        padding-top: 75px;
+    }
+
     .hero__container {
         align-items: center;
         justify-content: center;
@@ -40,6 +44,10 @@
         transition: .3s;
         position: absolute;
         bottom: 15px;   
+
+        @include tablets() {
+            display: none;
+        }
 
         &:hover {
             color: $red;

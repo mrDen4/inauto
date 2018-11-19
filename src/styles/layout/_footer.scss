@@ -6,16 +6,32 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include tablets() {
+            flex-direction: column;
+        }
     }
 
     .row__nav {
         display: flex;
+
+        @include tablets() {
+            flex-direction: column;
+        }
+
+        .nav__item {
+            margin-bottom: 20px;
+        }
 
         .item__link {
             color: #ffffff;
             text-decoration: none;
             margin-right: 20px;
             transition: .3s;
+
+            @include tablets() {
+                margin-right: 0;
+            }
 
             &:hover {
                 color: $red;
@@ -28,9 +44,18 @@
         text-decoration: none;
         transition: .3s;
 
+        @include tablets() {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .link__text {
             transition: .3s;
             margin-right: 20px;
+
+            @include tablets() {
+                margin-right: 0;
+            }
         }
 
         &:hover {

@@ -21,8 +21,18 @@
         margin: 50px 0;
         width: 100%;
 
+        @include tablets() {
+            flex-direction: column;
+        }
+
         .list__item {
             width: 30%;
+
+            @include tablets() {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+            }
         }
 
         .item__video {
