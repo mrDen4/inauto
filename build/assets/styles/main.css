@@ -641,8 +641,7 @@ ul {
         display: flex;
         flex-direction: column; } }
   .contacts .contacts__map {
-    width: 60%;
-    background: yellow; }
+    width: 60%; }
     @media screen and (max-width: 880px) {
       .contacts .contacts__map {
         width: 100%;
