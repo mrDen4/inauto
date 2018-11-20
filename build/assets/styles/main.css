@@ -798,7 +798,10 @@ ul {
   .footer .row__link {
     display: flex;
     text-decoration: none;
+    align-items: center;
     transition: .3s; }
+    .footer .row__link img {
+      max-width: 200px; }
     @media screen and (max-width: 880px) {
       .footer .row__link {
         flex-direction: column;

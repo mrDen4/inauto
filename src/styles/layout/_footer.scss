@@ -42,7 +42,12 @@
     .row__link {
         display: flex;
         text-decoration: none;
+        align-items: center;
         transition: .3s;
+
+        img {
+            max-width: 200px;
+        }
 
         @include tablets() {
             flex-direction: column;
