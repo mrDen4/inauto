@@ -55,4 +55,49 @@
             }
         }
     }
+
+    &--menu {
+        transform: translateX(9999px);
+        transition: .3s;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100%;
+
+        &--active {
+            transform: translateX(0);
+        }
+
+        @include tablets() {
+            padding-top: 250px;
+        }
+    }
+
+    .services__nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+        @include horizon() {
+            flex-direction: column;
+        }
+
+        .item__link {
+            text-decoration: none;
+            color: #ffffff;
+            transition: .3s;
+
+            &:hover {
+                color: $red;
+            }
+        }
+
+        .nav__item {
+
+            @include horizon() {
+                margin-bottom: 20px;
+            }
+        }
+    }
 }

@@ -24,20 +24,43 @@
         .list__item {
             background: #ffff;
             width: 23%;
+            transition: .3s;
+
+            &:hover {
+                background: $red;
+
+                .item__text {
+                    color: #ffff;
+                }
+
+                .item__img {
+                    opacity: .7;
+                }
+                
+                .item__name {
+                    color: #ffff;
+                }
+            }
 
             @include horizon() {
                 margin-bottom: 30px;
                 width: 100%;
             }
 
+            .item__name {
+                transition: .3s;
+            }
+
             .item__img {
                 width: 100%;
+                transition: .3s;
             }
         }
 
         .item__text {
             color: #000000;
             margin-bottom: 35px;
+            transition: .3s;
         }
     }
 }
