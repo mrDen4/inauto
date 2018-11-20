@@ -1,6 +1,12 @@
 .services {
     padding-top: 100px;
 
+    &--page {
+        @include tablets() {
+            padding-top: 250px;
+        }
+    }
+
     .services__container {
         background: #0D0D0D;
     }

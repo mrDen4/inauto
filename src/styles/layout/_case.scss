@@ -1,0 +1,44 @@
+.case {
+    padding-top: 150px;
+
+    @include tablets() {
+        padding-top: 250px;
+    }
+
+    .case__container {
+        background: #0D0D0D;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @include horizon() {
+            flex-direction: column;
+        }
+    }
+
+    .case__img {
+        width: 45%;
+        overflow: hidden;
+
+        @include horizon() {
+            width: 100%;
+        }
+
+        .img__img {
+            height: 100%;
+
+            @include horizon() {
+                width: 100%;
+                height: inherit;
+            }
+        }
+    }
+
+    .case__content {
+        width: 50%;
+
+        @include horizon() {
+            width: 100%;
+        }
+    }
+}

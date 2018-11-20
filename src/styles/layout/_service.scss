@@ -1,0 +1,65 @@
+.service {
+    padding-top: 150px;
+
+    @include tablets() {
+        padding-top: 250px;
+    }
+
+    .service__container {
+        background: #0D0D0D;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @include tablets() {
+            flex-direction: column;
+        }
+    }
+
+    .service__img {
+        width: 45%;
+        height: 100%;
+        overflow: hidden;
+
+        @include tablets() {
+            width: 100%;
+        }
+
+        .img__img {
+            height: 100%;
+
+            @include tablets() {
+                width: 100%;
+                height: inherit;
+            }
+        }
+    }
+
+    .service__content {
+        width: 50%;
+
+        @include tablets() {
+            width: 100%;
+        }
+    }
+
+    .service__price {
+        color: $red;
+        font-weight: bold;
+        margin-bottom: 0;
+
+        .price__big {
+            font-size: 64px;
+        }
+    }
+
+    .service__text {
+        margin: 0;
+    }
+
+    .service__btn {
+        width: 270px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

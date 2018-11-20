@@ -45,6 +45,21 @@
         }
     }
 
+    .mission__case {
+        width: 45%;
+        background: gray;
+
+        @include tablets() {
+            width: 60%;
+            height: 350px;
+        }
+
+        @include horizon() {
+            width: 100%;
+            height: 350px;
+        }
+    }
+
     .content__row {
         display: flex;
         justify-content: space-between;

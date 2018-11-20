@@ -1,0 +1,47 @@
+.works {
+    padding-top: 150px;
+
+    @include tablets() {
+        padding-top: 250px;
+    }
+
+    .works__container {
+        align-items: center;
+    }
+
+    .works__gallery {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .gallery__item {
+            width: 30%;
+            height: 350px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            background: $red;
+
+            @include tablets() {
+                width: 45%;
+                background: none;
+            }
+
+            @include horizon() {
+                width: 100%;
+            }
+
+            &:hover {
+                .item__img {
+                    opacity: .7;
+                }
+            }
+
+            .item__img {
+                height: 100%;
+                transition: .3s;
+            }
+        }
+    }
+}

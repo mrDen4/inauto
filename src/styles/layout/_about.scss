@@ -5,6 +5,14 @@
         padding-top: 0;
     }
 
+    &--page {
+        padding-top: 150px;
+
+        @include tablets() {
+            padding-top: 250px;
+        }
+    }
+
     .about__container {
         flex-direction: row;
         justify-content: space-between;
