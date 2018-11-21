@@ -213,19 +213,29 @@
                 <p class="text portfolio__text">Можете ознакомиться с выполненными проектами нашего сервиса</p>
                 <div class="portfolio__imgs">
                     <div class="portfolio__left">
-                        <img src="./assets/images/portfolio/1.png" alt="" class="left__img">
+                        <a href="#" class="portfolio__link">
+                            <img src="./assets/images/portfolio/1.png" alt="" class="left__img">
+                        </a>
                     </div>
                     <div class="portfolio__center">
                         <div class="center__top">
-                            <img src="./assets/images/portfolio/2.png" alt="" class="center__img">
-                            <img src="./assets/images/portfolio/3.png" alt="" class="center__img">
+                            <a href="#" class="portfolio__link">
+                                <img src="./assets/images/portfolio/2.png" alt="" class="center__img">
+                            </a>
+                            <a href="#" class="portfolio__link">
+                                <img src="./assets/images/portfolio/3.png" alt="" class="center__img">
+                            </a>
                         </div>
                         <div class="center__bottom">
-                            <img src="./assets/images/portfolio/4.png" alt="" class="center__img">
+                            <a href="#" class="portfolio__link">
+                                <img src="./assets/images/portfolio/4.png" alt="" class="center__img">
+                            </a>
                         </div>
                     </div>
                     <div class="portfolio__right">
-                        <img src="./assets/images/portfolio/5.png" alt="" class="right__img">
+                        <a href="#" class="portfolio__link">
+                            <img src="./assets/images/portfolio/5.png" alt="" class="right__img">
+                        </a>
                     </div>
                 </div>
                 <a href="#" class="button portfolio__btn">посмотреть все работы</a>
@@ -521,6 +531,26 @@
             </ul>
         </div>
     </section>
+    <div class="popup">
+        <button class="popup__exit">&times;</button>
+        <h2 class="title popup__title">Записаться в наш сервисный центр</h2>
+        <form method="POST" class="form popup__form">
+            <div class="form__row">
+                <input type="text" name="phone" value="" class="input row__inp" placeholder="Ваш номер">
+                <input type="text" name="name" value="" class="input row__inp" placeholder="Ваше имя">
+                <select class="select row__select" name="service">
+                    <option value="1">Выбрать услугу</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+            <div class="form__row">
+                <input type="text" name="comment" value="" class="input input--comment" placeholder="Ваш комментарий">
+                <button class="button row__btn">оставить заявку</button>
+            </div>
+        </form>
+    </div>
+    <div class="bg"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./assets/scripts/main.js"></script>

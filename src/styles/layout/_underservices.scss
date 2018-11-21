@@ -56,6 +56,11 @@
         .item__title {
             font-size: 18px;
             text-align: center;
+            line-height: inherit;
+        }
+
+        .item__text {
+            text-align: center;
         }
     }
 }

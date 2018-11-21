@@ -289,9 +289,11 @@ ul {
 
 .services {
   padding-top: 100px; }
-  @media screen and (max-width: 880px) {
-    .services--page {
-      padding-top: 250px; } }
+  .services--page {
+    padding-top: 150px; }
+    @media screen and (max-width: 880px) {
+      .services--page {
+        padding-top: 250px; } }
   .services .services__container {
     background: #0D0D0D; }
   .services .services__title {
@@ -427,13 +429,14 @@ ul {
         width: 100%;
         max-height: 1050px; } }
     .portfolio .portfolio__center .center__top {
-      display: flex; }
+      display: flex;
+      height: 50%; }
       @media screen and (max-width: 880px) {
         .portfolio .portfolio__center .center__top {
           max-height: 700px;
           flex-direction: column; } }
     .portfolio .portfolio__center .center__bottom {
-      height: 350px;
+      height: 50%;
       display: flex; }
   .portfolio .portfolio__right {
     width: 33.3%;
@@ -858,6 +861,9 @@ ul {
       background: #ffffff; }
     .underservices .list__item .item__title {
       font-size: 18px;
+      text-align: center;
+      line-height: inherit; }
+    .underservices .list__item .item__text {
       text-align: center; }
 
 .service {
@@ -888,15 +894,17 @@ ul {
           height: inherit; } }
   .service .service__content {
     width: 50%; }
+    .service .service__content p {
+      color: #ffffff; }
     @media screen and (max-width: 880px) {
       .service .service__content {
         width: 100%; } }
-  .service .service__price {
-    color: #E02929;
-    font-weight: bold;
-    margin-bottom: 0; }
-    .service .service__price .price__big {
-      font-size: 64px; }
+    .service .service__content .service__price {
+      color: #E02929;
+      font-weight: bold;
+      margin-bottom: 0; }
+      .service .service__content .service__price .price__big {
+        font-size: 64px; }
   .service .service__text {
     margin: 0; }
   .service .service__btn {
@@ -966,3 +974,94 @@ ul {
     @media screen and (max-width: 678px) {
       .case .case__content {
         width: 100%; } }
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 450px;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  background: #0D0D0D;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -225px;
+  transition: .3s;
+  transform: translateY(-9999px); }
+  @media screen and (max-width: 678px) {
+    .popup {
+      width: 100vw;
+      height: 100vh;
+      margin-left: 0;
+      margin-top: 0;
+      top: 0;
+      left: 0; } }
+  .popup--active {
+    transform: translateY(0); }
+  .popup .popup__exit {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: #E02929;
+    font-size: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s; }
+    .popup .popup__exit:hover {
+      color: #ffffff;
+      transform: rotate(90deg); }
+  .popup .popup__title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px; }
+  .popup .popup__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 30px; }
+    .popup .popup__form .form__row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      flex-direction: column;
+      align-items: center; }
+      .popup .popup__form .form__row .input {
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #E02929;
+        padding: 0 0 20px 0;
+        color: #ffffff;
+        margin-bottom: 20px; }
+        .popup .popup__form .form__row .input--comment {
+          width: 100%;
+          margin-bottom: 20px; }
+      .popup .popup__form .form__row .select {
+        width: 100%;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #E02929;
+        color: #ffffff;
+        padding-bottom: 20px;
+        margin-bottom: 20px; }
+      .popup .popup__form .form__row .row__btn {
+        width: 100%;
+        margin-bottom: 20px; }
+
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 9999px;
+  height: 9999px;
+  z-index: 900;
+  background: #0D0D0D;
+  opacity: .8;
+  transition: .3s;
+  transform: translateY(-9999px); }
+  .bg--active {
+    transform: translateY(0); }

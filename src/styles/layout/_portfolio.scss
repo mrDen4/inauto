@@ -93,6 +93,7 @@
 
         .center__top {
             display: flex;
+            height: 50%;
             
             @include tablets() {
                 max-height: 700px;
@@ -101,7 +102,7 @@
         }
 
         .center__bottom {
-            height: 350px;
+            height: 50%;
             display: flex;
         }
     }
