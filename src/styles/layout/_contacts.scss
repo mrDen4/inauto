@@ -5,9 +5,11 @@
         background: #0D0D0D;
         flex-direction: row;
         justify-content: space-between;
+        padding-right: 0;
 
         @include tablets() {
             flex-direction: column;
+            padding-right: 15px;
         }
     }
 
@@ -41,10 +43,15 @@
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+        
+        @include horizon() {
+            justify-content: center;
+        }
     }
 
     .item__img {
         margin-right: 10px;
+        max-height: 12px;
     }
 
     .item__phones {
@@ -55,9 +62,5 @@
     .item__text {
         margin-right: 10px;
         text-decoration: none;
-    }
-
-    .item__img {
-        width: 20px;
     }
 }

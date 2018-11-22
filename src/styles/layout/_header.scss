@@ -11,7 +11,7 @@
         width: 100%;
         padding-top: 30px;
 
-        @include tablets() {
+        @include laptop() {
             flex-direction: column;
             position: relative;
             padding-top: 0;
@@ -23,8 +23,9 @@
         text-decoration: none;
         transition: .3s;
 
-        @include tablets() {
+        @include laptop() {
             margin-right: initial;
+            order: -2;
         }
         
         &:hover {
@@ -105,6 +106,10 @@
         align-items: center;
         color: #ffffff;
         cursor: pointer;
+
+        @include laptop() {
+            order: -1;
+        }
 
         @include tablets() {
             position: absolute;

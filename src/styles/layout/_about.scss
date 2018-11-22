@@ -17,9 +17,11 @@
         flex-direction: row;
         justify-content: space-between;
         background: #0D0D0D;
+        padding-left: 0;
 
         @include tablets() {
             flex-direction: column;
+            padding-left: 15px;
         }
     }
 
