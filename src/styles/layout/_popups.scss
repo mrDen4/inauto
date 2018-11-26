@@ -74,6 +74,19 @@
                 color: #ffffff;
                 margin-bottom: 20px;
 
+                &::-webkit-input-placeholder {
+                    color: #ffffff;
+                   }
+                 &::-moz-placeholder { /* Firefox 19+ */
+                     color: #ffffff;
+                   }
+                 &:-ms-input-placeholder {
+                     color: #ffffff;
+                   }
+                 &:-moz-placeholder { /* Firefox 18- */
+                     color: #ffffff;
+                   }
+
                 &--comment {
                     width: 100%;
                     margin-bottom: 20px;
@@ -88,6 +101,13 @@
                 color: #ffffff;
                 padding-bottom: 20px;
                 margin-bottom: 20px;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+
+                option {
+                    background: #000000;
+                    color: #ffffff;
+                }
             }
 
             .row__btn {
@@ -112,5 +132,31 @@
 
     &--active {
         transform: translateY(0);
+    }
+}
+
+.popup-img {
+    position: fixed;
+    width: 50vw;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    margin-top: -25vh;
+    margin-left: -25vw;
+    transition: .3s;
+    transform: translateY(-9999px);
+    z-index: 1000;
+
+    &--active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(0);
+    }
+
+    @include tablets() {
+        margin-left: 0;
+        left: 0;
+        width: 100vw;
     }
 }

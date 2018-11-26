@@ -14,7 +14,15 @@ $(document).ready(function () {
   });
 
   $('.bg, .popup__exit, .popup .popup__form .form__row .row__btn').on('click', function () {
-    $('.popup').toggleClass('popup--active');
+    $('.popup').removeClass('popup--active');
+    $('.popup-img').removeClass('popup-img--active');
+    $('.bg').toggleClass('bg--active');
+  });
+
+  $('.portfolio--gallery img').on('click', function () {
+    var imgSrc = $(this).attr('src'); 
+    $('.popup-img img').attr('src',imgSrc);
+    $('.popup-img').toggleClass('popup-img--active');
     $('.bg').toggleClass('bg--active');
   });
 

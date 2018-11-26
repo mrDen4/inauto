@@ -12,7 +12,6 @@
 
     .underservices__list {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
         width: 100%;
         margin-top: 50px;
@@ -25,6 +24,11 @@
         align-items: center;
         border: 1px solid #ffffff;
         margin-bottom: 50px;
+        margin-right: 20px;
+
+        &:nth-child(6n+6) {
+            margin-right: 0;
+        }
 
         @include tablets() {
             width: 45%;
