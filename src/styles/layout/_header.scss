@@ -72,8 +72,12 @@
         display: flex;
 
         @include tablets() {
-            flex-direction: column;
             align-items: center;
+            flex-wrap: wrap;
+        }
+
+        @include horizon() {
+            flex-direction: column;
         }
     }
 
@@ -87,11 +91,15 @@
 
         @include tablets() {
             margin-right: 0;
-            width: 70%;
+            width: 45%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 10px;
+        }
+
+        @include horizon() {
+            width: 100%;
         }
         
         .item__img {
@@ -167,6 +175,12 @@
             margin: 0;
             transition: .3s;
             width: 0;
+
+            @include phones() {
+                position: absolute;
+                top: 15px;
+                right: 38px;
+            }
 
             &--active {
                 opacity: 1;

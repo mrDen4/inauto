@@ -3,6 +3,10 @@
     width: 100vw;
     position: relative;
 
+    @include laptop() {
+        padding-top: 75px;
+    }
+
     @include tablets() {
         padding-top: 75px;
     }

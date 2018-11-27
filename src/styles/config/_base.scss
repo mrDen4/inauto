@@ -1,6 +1,6 @@
 .container {
   max-width: 1170px;
-  padding-left: 15px;
+  padding-left: 25px;
   padding-right: 25px;
   margin: 0 auto;
   display: flex;
@@ -20,6 +20,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   position: relative;
+  background: #000000;
 }
 
 .section {

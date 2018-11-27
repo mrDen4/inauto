@@ -159,4 +159,21 @@
         left: 0;
         width: 100vw;
     }
+
+    &__exit {
+        position: absolute;
+        right: 20px;
+        top: -40px;
+        color: $red;
+        font-size: 34px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            color: #ffffff;
+            transform: rotate(90deg);
+        }
+    }
 }

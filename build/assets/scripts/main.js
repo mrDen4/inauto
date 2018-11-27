@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('.bg').toggleClass('bg--active');
   });
 
-  $('.bg, .popup__exit, .popup .popup__form .form__row .row__btn').on('click', function () {
+  $('.bg, .popup-img__exit, .popup__exit, .popup .popup__form .form__row .row__btn').on('click', function () {
     $('.popup').removeClass('popup--active');
     $('.popup-img').removeClass('popup-img--active');
     $('.bg').toggleClass('bg--active');
