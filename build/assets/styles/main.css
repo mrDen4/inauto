@@ -920,7 +920,7 @@ ul {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
       height: 100%;
       text-decoration: none;
       transition: .3s;
@@ -978,7 +978,7 @@ ul {
       font-weight: bold;
       margin-bottom: 0; }
       .service .service__content .service__price .price__big {
-        font-size: 64px; }
+        font-size: 36px; }
   .service .service__text {
     margin: 0; }
   .service .service__btn {
