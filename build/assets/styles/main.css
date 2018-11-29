@@ -935,7 +935,7 @@ ul {
       height: 100%;
       text-decoration: none;
       transition: .3s;
-      padding: 0 10px; }
+      padding: 10px; }
       .underservices .list__item .item__link:hover {
         background: #E02929;
         color: #ffffff; }
@@ -947,7 +947,11 @@ ul {
     .underservices .list__item .item__title {
       font-size: 18px;
       text-align: center;
-      line-height: inherit; }
+      line-height: inherit;
+      margin: 0; }
+      @media screen and (max-width: 500px) {
+        .underservices .list__item .item__title {
+          font-size: 16px; } }
     .underservices .list__item .item__text {
       text-align: center; }
 
