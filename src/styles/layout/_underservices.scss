@@ -15,6 +15,10 @@
         flex-wrap: wrap;
         width: 100%;
         margin-top: 50px;
+
+        @include phones() {
+            justify-content: space-between;
+        }
     }
 
     .list__item {
@@ -26,12 +30,17 @@
         margin-bottom: 50px;
         margin-right: 20px;
 
-        &:nth-child(6n+6) {
+        @include phones() {
             margin-right: 0;
+            width: 45%;
         }
 
-        @include tablets() {
-            width: 45%;
+        @media screen and (max-width: 350px) {
+            width: 100%;
+        }
+
+        &:nth-child(6n+6) {
+            margin-right: 0;
         }
 
         .item__link {
